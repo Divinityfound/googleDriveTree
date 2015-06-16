@@ -5,10 +5,6 @@
 		private $keys;
 		private $requestedKeys;
 
-		public function __construct() {
-
-		}
-
 		public function returnData() {
 			if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 				return json_encode(array('Error' => 'Post data unavailable'));
